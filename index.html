@@ -12,10 +12,11 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f0e8 0%, #e8ddd0 100%);
             min-height: 100vh;
             padding: 20px;
+            color: #4a4036;
         }
 
         .container {
@@ -25,25 +26,28 @@
 
         header {
             text-align: center;
-            color: white;
+            color: #4a4036;
             margin-bottom: 40px;
         }
 
         header h1 {
             font-size: 2.5rem;
             margin-bottom: 10px;
+            font-weight: 300;
+            letter-spacing: 2px;
         }
 
         header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
+            font-size: 1rem;
+            opacity: 0.8;
+            font-weight: 300;
         }
 
         .input-section {
-            background: white;
+            background: #ffffff;
             padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border-radius: 2px;
+            box-shadow: 0 2px 20px rgba(74, 64, 54, 0.08);
             margin-bottom: 30px;
         }
 
@@ -53,25 +57,30 @@
 
         label {
             display: block;
-            font-weight: 600;
+            font-weight: 400;
             margin-bottom: 8px;
-            color: #333;
+            color: #4a4036;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         input[type="text"],
         select {
             width: 100%;
             padding: 12px;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
+            border: 1px solid #d4c5b3;
+            border-radius: 2px;
             font-size: 1rem;
             transition: border-color 0.3s;
+            background: #fafaf8;
         }
 
         input[type="text"]:focus,
         select:focus {
             outline: none;
-            border-color: #667eea;
+            border-color: #a89175;
+            background: white;
         }
 
         .form-row {
@@ -83,19 +92,20 @@
         button {
             width: 100%;
             padding: 15px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #a89175;
             color: white;
             border: none;
-            border-radius: 8px;
-            font-size: 1.1rem;
-            font-weight: 600;
+            border-radius: 2px;
+            font-size: 1rem;
+            font-weight: 400;
             cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: background 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+            background: #8f7a61;
         }
 
         button:disabled {
@@ -106,13 +116,13 @@
         .loading {
             text-align: center;
             padding: 40px;
-            color: white;
+            color: #4a4036;
             display: none;
         }
 
         .spinner {
-            border: 4px solid rgba(255, 255, 255, 0.3);
-            border-top: 4px solid white;
+            border: 3px solid rgba(168, 145, 117, 0.2);
+            border-top: 3px solid #a89175;
             border-radius: 50%;
             width: 50px;
             height: 50px;
@@ -132,8 +142,8 @@
         .weather-card {
             background: white;
             padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border-radius: 2px;
+            box-shadow: 0 2px 20px rgba(74, 64, 54, 0.08);
             margin-bottom: 25px;
         }
 
@@ -146,13 +156,14 @@
 
         .weather-temp {
             font-size: 3rem;
-            font-weight: bold;
-            color: #667eea;
+            font-weight: 200;
+            color: #a89175;
         }
 
         .weather-condition {
-            font-size: 1.3rem;
-            color: #666;
+            font-size: 1.2rem;
+            color: #6b5d4f;
+            font-weight: 300;
         }
 
         .weather-details {
@@ -164,126 +175,203 @@
 
         .weather-detail {
             text-align: center;
-            padding: 10px;
-            background: #f8f9fa;
-            border-radius: 8px;
+            padding: 15px;
+            background: #fafaf8;
+            border-radius: 2px;
         }
 
         .weather-detail-label {
-            font-size: 0.85rem;
-            color: #666;
+            font-size: 0.75rem;
+            color: #8a7a6a;
             margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .weather-detail-value {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #333;
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: #4a4036;
         }
 
         .outfit-section {
             background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            border-radius: 2px;
+            box-shadow: 0 2px 20px rgba(74, 64, 54, 0.08);
             margin-bottom: 25px;
         }
 
         .outfit-section h2 {
-            color: #667eea;
-            margin-bottom: 20px;
-            font-size: 1.8rem;
+            color: #4a4036;
+            margin-bottom: 30px;
+            font-size: 1.5rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
         }
 
-        .outfit-grid {
+        /* Flatlay Style Layout */
+        .outfit-flatlay {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
 
-        .outfit-item {
+        .outfit-item-card {
+            background: #fafaf8;
+            border-radius: 2px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .outfit-item-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .outfit-image-container {
+            width: 100%;
+            height: 280px;
+            background: #f5f0e8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .outfit-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .outfit-image-placeholder {
+            width: 60%;
+            height: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            opacity: 0.3;
+        }
+
+        .outfit-item-info {
             padding: 20px;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            border-radius: 10px;
-            border-left: 4px solid #667eea;
         }
 
         .outfit-item-title {
-            font-weight: 600;
-            color: #667eea;
+            font-weight: 400;
+            color: #a89175;
             margin-bottom: 8px;
             text-transform: uppercase;
-            font-size: 0.85rem;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
         }
 
         .outfit-item-content {
-            color: #333;
-            font-size: 1.1rem;
+            color: #4a4036;
+            font-size: 1rem;
+            line-height: 1.5;
+            font-weight: 300;
+        }
+
+        .photo-credit {
+            font-size: 0.65rem;
+            color: #999;
+            margin-top: 8px;
+        }
+
+        .photo-credit a {
+            color: #a89175;
+            text-decoration: none;
+        }
+
+        .accessories-section {
+            background: #fafaf8;
+            padding: 25px;
+            border-radius: 2px;
+            margin-top: 25px;
         }
 
         .accessories-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 12px;
+            margin-top: 15px;
         }
 
         .accessory-tag {
-            background: #667eea;
-            color: white;
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
+            background: white;
+            color: #4a4036;
+            padding: 10px 20px;
+            border-radius: 2px;
+            font-size: 0.85rem;
+            border: 1px solid #d4c5b3;
+            font-weight: 300;
+        }
+
+        .color-palette-section {
+            margin-top: 40px;
         }
 
         .color-palette {
             display: flex;
             gap: 15px;
-            margin-top: 15px;
+            margin-top: 20px;
             flex-wrap: wrap;
+            justify-content: center;
         }
 
         .color-swatch {
-            width: 80px;
-            height: 80px;
-            border-radius: 10px;
+            width: 100px;
+            height: 100px;
+            border-radius: 2px;
             display: flex;
             align-items: flex-end;
             justify-content: center;
-            padding: 8px;
+            padding: 10px;
             color: white;
-            font-size: 0.85rem;
-            font-weight: 600;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            font-size: 0.75rem;
+            font-weight: 400;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .style-tips {
-            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 20px;
-            border-left: 4px solid #f39c12;
+            background: #f5f0e8;
+            padding: 25px;
+            border-radius: 2px;
+            margin-top: 30px;
+            border-left: 3px solid #a89175;
         }
 
         .style-tips-title {
-            font-weight: 600;
-            color: #d35400;
-            margin-bottom: 10px;
+            font-weight: 400;
+            color: #4a4036;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.85rem;
         }
 
         .style-tips-content {
-            color: #7f5a34;
-            line-height: 1.6;
+            color: #6b5d4f;
+            line-height: 1.7;
+            font-weight: 300;
         }
 
         .error-message {
-            background: #fee;
-            color: #c33;
+            background: #fff5f5;
+            color: #c53030;
             padding: 15px;
-            border-radius: 8px;
+            border-radius: 2px;
             margin-top: 15px;
-            border-left: 4px solid #c33;
+            border-left: 3px solid #c53030;
             display: none;
         }
 
@@ -292,12 +380,12 @@
                 font-size: 2rem;
             }
 
-            .weather-temp {
-                font-size: 2.5rem;
+            .outfit-flatlay {
+                grid-template-columns: 1fr;
             }
 
-            .outfit-grid {
-                grid-template-columns: 1fr;
+            .weather-temp {
+                font-size: 2.5rem;
             }
         }
     </style>
@@ -305,21 +393,21 @@
 <body>
     <div class="container">
         <header>
-            <h1>☀️ Weather Outfit Advisor</h1>
-            <p>Get personalized outfit recommendations based on weather and your mood</p>
+            <h1>WEATHER OUTFIT ADVISOR</h1>
+            <p>Personalized outfit recommendations based on weather and your mood</p>
         </header>
 
         <!-- Input Form -->
         <div class="input-section">
             <form id="outfitForm">
                 <div class="form-group">
-                    <label for="location">📍 Location</label>
+                    <label for="location">Location</label>
                     <input type="text" id="location" placeholder="e.g., San Francisco, CA" required>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="mood">🎭 Mood</label>
+                        <label for="mood">Mood</label>
                         <select id="mood" required>
                             <option value="casual">Casual</option>
                             <option value="professional">Professional</option>
@@ -329,7 +417,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="style">👔 Style Preference</label>
+                        <label for="style">Style Preference</label>
                         <select id="style" required>
                             <option value="casual">Casual</option>
                             <option value="minimalist">Minimalist</option>
@@ -340,7 +428,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="color">🎨 Color Preference</label>
+                        <label for="color">Color Preference</label>
                         <select id="color" required>
                             <option value="neutral">Neutral</option>
                             <option value="warm">Warm</option>
@@ -350,7 +438,7 @@
                     </div>
                 </div>
 
-                <button type="submit" id="submitBtn">Get Outfit Recommendation</button>
+                <button type="submit" id="submitBtn">Get Recommendation</button>
                 <div class="error-message" id="errorMessage"></div>
             </form>
         </div>
@@ -370,7 +458,7 @@
                         <div class="weather-temp" id="temperature"></div>
                         <div class="weather-condition" id="condition"></div>
                     </div>
-                    <div style="font-size: 4rem;">🌤️</div>
+                    <div style="font-size: 4rem; opacity: 0.3;">☀</div>
                 </div>
                 <div class="weather-details">
                     <div class="weather-detail">
@@ -387,35 +475,27 @@
             <!-- Outfit Recommendations -->
             <div class="outfit-section">
                 <h2>Your Perfect Outfit</h2>
-                <div class="outfit-grid">
-                    <div class="outfit-item">
-                        <div class="outfit-item-title">👕 Top</div>
-                        <div class="outfit-item-content" id="top"></div>
-                    </div>
-                    <div class="outfit-item">
-                        <div class="outfit-item-title">👖 Bottom</div>
-                        <div class="outfit-item-content" id="bottom"></div>
-                    </div>
-                    <div class="outfit-item">
-                        <div class="outfit-item-title">🧥 Outerwear</div>
-                        <div class="outfit-item-content" id="outerwear"></div>
-                    </div>
-                    <div class="outfit-item">
-                        <div class="outfit-item-title">👟 Footwear</div>
-                        <div class="outfit-item-content" id="footwear"></div>
-                    </div>
+                
+                <!-- Flatlay Style Grid -->
+                <div class="outfit-flatlay" id="outfitFlatlay">
+                    <!-- Will be populated by JavaScript -->
                 </div>
 
-                <div class="outfit-item">
-                    <div class="outfit-item-title">✨ Accessories</div>
+                <!-- Accessories Section -->
+                <div class="accessories-section">
+                    <div class="outfit-item-title">Accessories</div>
                     <div class="accessories-list" id="accessories"></div>
                 </div>
 
-                <h2 style="margin-top: 30px;">Recommended Color Palette</h2>
-                <div class="color-palette" id="colorPalette"></div>
+                <!-- Color Palette -->
+                <div class="color-palette-section">
+                    <h2>Recommended Color Palette</h2>
+                    <div class="color-palette" id="colorPalette"></div>
+                </div>
 
+                <!-- Style Tips -->
                 <div class="style-tips">
-                    <div class="style-tips-title">💡 Style Tips</div>
+                    <div class="style-tips-title">Style Tips</div>
                     <div class="style-tips-content" id="styleTips"></div>
                 </div>
             </div>
@@ -423,8 +503,8 @@
     </div>
 
     <script>
-        // CONFIGURATION - Update this with your Render.com backend URL
-        const API_BASE_URL = 'https://your-app-name.onrender.com';  // Replace with your actual Render URL
+        // CONFIGURATION - Update this with your backend URL
+        const API_BASE_URL = 'http://localhost:5000';  // Change to your Render URL when deployed
         
         // Color mapping for color swatches
         const colorMap = {
@@ -443,6 +523,14 @@
             'Emerald': '#50c878',
             'Royal Blue': '#4169e1',
             'Yellow': '#ffff00'
+        };
+
+        // Emoji mapping for outfit items
+        const emojiMap = {
+            'top': '👕',
+            'bottom': '👖',
+            'outerwear': '🧥',
+            'footwear': '👟'
         };
 
         // Form submission handler
@@ -504,11 +592,67 @@
             document.getElementById('humidity').textContent = `${data.weather.humidity}%`;
             document.getElementById('windSpeed').textContent = `${data.weather.wind_speed} mph`;
             
-            // Display outfit recommendations
-            document.getElementById('top').textContent = data.outfit.top;
-            document.getElementById('bottom').textContent = data.outfit.bottom;
-            document.getElementById('outerwear').textContent = data.outfit.outerwear || 'Not needed';
-            document.getElementById('footwear').textContent = data.outfit.footwear;
+            // Display outfit items in flatlay style
+            const flatlayContainer = document.getElementById('outfitFlatlay');
+            flatlayContainer.innerHTML = '';
+            
+            const outfitItems = ['top', 'bottom', 'outerwear', 'footwear'];
+            
+            outfitItems.forEach(item => {
+                // Skip outerwear if not needed
+                if (item === 'outerwear' && (!data.outfit[item] || data.outfit[item] === 'None needed' || data.outfit[item] === 'None')) {
+                    return;
+                }
+                
+                const card = document.createElement('div');
+                card.className = 'outfit-item-card';
+                
+                // Image container
+                const imageContainer = document.createElement('div');
+                imageContainer.className = 'outfit-image-container';
+                
+                // Check if we have an image from Unsplash
+                if (data.outfit_images && data.outfit_images[item]) {
+                    const img = document.createElement('img');
+                    img.src = data.outfit_images[item].url;
+                    img.alt = data.outfit[item];
+                    img.className = 'outfit-image';
+                    imageContainer.appendChild(img);
+                } else {
+                    // Placeholder if no image
+                    const placeholder = document.createElement('div');
+                    placeholder.className = 'outfit-image-placeholder';
+                    placeholder.textContent = emojiMap[item];
+                    imageContainer.appendChild(placeholder);
+                }
+                
+                // Info container
+                const infoContainer = document.createElement('div');
+                infoContainer.className = 'outfit-item-info';
+                
+                const title = document.createElement('div');
+                title.className = 'outfit-item-title';
+                title.textContent = item.toUpperCase();
+                
+                const content = document.createElement('div');
+                content.className = 'outfit-item-content';
+                content.textContent = data.outfit[item];
+                
+                infoContainer.appendChild(title);
+                infoContainer.appendChild(content);
+                
+                // Photo credit if available
+                if (data.outfit_images && data.outfit_images[item]) {
+                    const credit = document.createElement('div');
+                    credit.className = 'photo-credit';
+                    credit.innerHTML = `Photo by <a href="${data.outfit_images[item].photographer_url}" target="_blank">${data.outfit_images[item].photographer}</a> on Unsplash`;
+                    infoContainer.appendChild(credit);
+                }
+                
+                card.appendChild(imageContainer);
+                card.appendChild(infoContainer);
+                flatlayContainer.appendChild(card);
+            });
             
             // Display accessories
             const accessoriesContainer = document.getElementById('accessories');
